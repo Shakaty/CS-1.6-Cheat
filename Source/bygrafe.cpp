@@ -109,17 +109,17 @@ void Bhop(struct usercmd_s* cmd, float speedMultiplier = 1.0f)
 	static bool lastJumpPressed = false;
 	static float oldYaw = 0.0f;
 
-	// Her frame jump tuşunu basılı göster (otomatik zıplama)
+	
 	if ((g_Local.iFlags & FL_ONGROUND)) {
 		cmd->buttons |= IN_JUMP;
 	}
 	else {
-		cmd->buttons |= IN_DUCK; //havadayken egilme yani sbj için
-		cmd->buttons &= ~IN_JUMP; // havada iken jump’ı temizle
+		cmd->buttons |= IN_DUCK; 
+		cmd->buttons &= ~IN_JUMP; 
 	}
 
 	cmd->sidemove = (int)(cmd->sidemove * speedMultiplier);
-	//// Hız çarpanı (isteğe bağlı)
+	
 	cmd->forwardmove = (int)(cmd->forwardmove * speedMultiplier);
 }
 
@@ -239,7 +239,7 @@ void ThirdPerson(ref_params_t* p)
 	g_Engine.pEventAPI->EV_SetTraceHull(2);
 	g_Engine.pEventAPI->EV_PlayerTrace(camOrigin, desiredCam, PM_GLASS_IGNORE, -1, &tr);
 
-	// ÇARPTIYSA -> duvara çok girmesin
+	//duvara çok girmesin
 	p->vieworg[0] = tr.endpos[0];
 	p->vieworg[1] = tr.endpos[1];
 	p->vieworg[2] = tr.endpos[2];
@@ -273,7 +273,7 @@ void DrawSpeed()
 
 	// yeşil renk
 	g_Engine.pfnDrawSetTextColor(0.0f, 1.0f, 0.0f);
-	// sağ tarafa yapıştır
+	
 	g_Engine.pfnDrawConsoleString(g_ScreenInfo.iWidth - len, 200, buff);
 }
 
@@ -295,8 +295,6 @@ void HookUserMessages()
 	pTeamInfo = HookUserMsg("TeamInfo", TeamInfo);
 	pScoreAttrib = HookUserMsg("ScoreAttrib", ScoreAttrib);
 }
-///////////////////////////////////////////////////////////////////////////
-	//g_pConsole->DPrintf("NextCmdTime: %f\n", client_static->nextcmdtime); client console paneline yazar
 
 void CL_CreateMove(float frametime, struct usercmd_s* cmd, int active)
 {
@@ -448,5 +446,6 @@ void HookClientFunctions()
 
 	g_pClient->V_CalcRefdef = V_CalcRefdef;
 	HookUserMessages();
+
 
 }
