@@ -3,14 +3,14 @@ The cheat for cs 1.6 made 3 months ago ,using microsoft detour lib
 
 What inside in it?
 
--gamespeedcontroller
--noflash
--fakelag
--strafe hack
--auto bhop
--third person cam (need to be update not well but good)
--fov changer
--speedometer
+*-gamespeedcontroller*
+*-noflash*
+*-fakelag*
+*-strafe hack*
+*-auto bhop*
+*-third person cam (need to be update not well but good)*
+*-fov changer*
+*-speedometer*
 
 > To use this project, follow the steps below:
 1. Open the solution file (.sln) in Visual Studio 2022 or 2026.
