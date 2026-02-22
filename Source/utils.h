@@ -24,14 +24,14 @@ public:
 	string szDirFile(const char* pszName);
 
 
-	//aimbot icin
+
 	bool bGrenade(int iWeaponID);
 	bool bBadWpn(int iWeaponID);
 	void HUD_AddEntity(struct cl_entity_s* ent);
 };
 extern utils g_Utils;
 
-//for hpp
+
 
 class CSkipFrames
 {
@@ -136,7 +136,7 @@ enum
 	BULLETTYPE_15 = 15
 };
 
-////////////// 101xdden speedptr için ekleme gerekiyor aþadakileri
+//////////////
 
 BOOL __comparemem(const UCHAR* buff1, const UCHAR* buff2, UINT size);
 ULONG __findmemoryclone(const ULONG start, const ULONG end, const ULONG clone, UINT size);
@@ -146,7 +146,7 @@ ULONG __findreferencee(const ULONG start, const ULONG end, const ULONG address);
 #define FindMemoryClone(Start, End, Clone, Size) __findmemoryclone((const ULONG)Start, (const ULONG)End, (const ULONG)Clone, (UINT)Size)
 #define FindReferencee(Start, End, Address) __findreferencee((const ULONG)Start, (const ULONG)End, (const ULONG)Address)
 
-//for hpp
+
 inline float LengthSqr2D(const float v[3])
 {
 	return v[0] * v[0] + v[1] * v[1];
@@ -175,3 +175,4 @@ enum ArmorType
 	ARMOR_KEVLAR,	// body vest only
 	ARMOR_VESTHELM,	// vest and helmet
 };
+
