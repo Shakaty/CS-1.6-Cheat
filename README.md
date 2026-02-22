@@ -8,7 +8,7 @@ What inside in it?
 *-fakelag*  
 *-strafe hack*  
 *-auto bhop*  
-*-third person cam (need to be update not well but good)*  
+*-third person cam (need to be update not very well but good)*  
 *-fov changer*  
 *-speedometer*  
 
