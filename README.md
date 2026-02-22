@@ -18,5 +18,5 @@ Set the build configuration to Release and select your target architecture x86.
 Build the project (Ctrl+Shift+B).
 After a successful build, you will find the output file in the binary/.
 
-[!IMPORTANT]
-This project is for educational purposes only. The developer assumes no responsibility for any illegal use or damages caused by this software. Use it at your own risk and responsibility.
+> [!IMPORTANT]
+> This project is for **educational purposes only**. The developer assumes no responsibility for any illegal use or damages caused by this software. Use it at your own risk and responsibility.
