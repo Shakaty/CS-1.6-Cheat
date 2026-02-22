@@ -6,6 +6,7 @@ What inside in it?
 *-gamespeedcontroller*  
 *-noflash*  
 *-fakelag*  
+*-gstrafe*  
 *-strafe hack*  
 *-auto bhop*  
 *-third person cam (need to be update not very well but good)*  
