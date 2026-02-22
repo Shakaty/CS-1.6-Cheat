@@ -1,5 +1,5 @@
 # CS-1.6- Internal Cheat
-The cheat for cs 1.6 made 3 months ago ,using microsoft detour lib 
+The cheat for cs 1.6 maden by me 3 months ago ,using microsoft detour lib 
 
 What inside in it?
 
