@@ -8,11 +8,11 @@
 
 #include "GameSDK/const.h"  //edited
 #include "GameSDK/wrect.h"
-#include "GameSDK/cl_dll.h"   //usermsg için eklendii!!!
+#include "GameSDK/cl_dll.h"   //usermsg iÃ§in eklendii!!!
 #include "GameSDK/interface.h"
 #include "GameSDK/r_studioint.h"
 
-#include "GameSDK/screenfade.h"// bu ve aþþagýdakileri
+#include "GameSDK/screenfade.h"// bu ve aÃ¾Ã¾agÃ½dakileri
 #include "GameSDK/progs.h"
 #include "GameSDK/progdefs.h"
 #include "GameSDK/cl_entity.h"
@@ -24,10 +24,10 @@
 #include "GameSDK/cvardef.h"
 #include "GameSDK/parsemsg.h"
 #include "GameSDK/cdll_int.h"
-#include "GameSDK/pm_movevars.h"   //bhop için gerekli airaccelerate i alýyor buradan s
+#include "GameSDK/pm_movevars.h"   //bhop iÃ§in gerekli airaccelerate i alÃ½yor buradan s
 #include "GameSDK/pm_defs.H"
 #include "GameSDK/event_api.h"
-#include "GameSDK/com_model.h"  //name stealer için içindeki makrolarý kullaniciðizz  
+#include "GameSDK/com_model.h"  //name stealer iÃ§in iÃ§indeki makrolarÃ½ kullaniciÃ°izz  
 #include "GameSDK/ref_params.h"			
 
 //FOR Fakelag
@@ -45,8 +45,8 @@
 #include "usermsg.h"
 #include "hook.h"
 //////////
-#include "QAngle.h"		//bu ikisinin orijinalini deðiþtirdim alttaki de dahil bozuk þeyleri deðiþtim
-#include "Vector.h"		//evolden alýndý her ikiside QAngle funclarýný kullanabilmek adýna!!!
+#include "QAngle.h"		//bu ikisinin orijinalini deÃ°iÃ¾tirdim alttaki de dahil bozuk Ã¾eyleri deÃ°iÃ¾tim
+#include "Vector.h"		//
 
 //////////
 
@@ -136,4 +136,5 @@ typedef void(*CL_Move_t)();
 extern CL_Move_t CL_Move_s;
 extern PClientUserMsg pUserMsgBase;
 extern GameInfo_s BuildInfo;
+
 
