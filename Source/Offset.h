@@ -1,7 +1,7 @@
 #pragma once
 #include "../GameSDK/cl_dll.h"
 
-//cl_dll.h olarak yazcan Main.h ekleyince mal hata veriyor !!!!!! pfnusermsghooku bulamadı diye!!!!!
+
 
 typedef struct ClientUserMsg
 {
@@ -89,6 +89,6 @@ public:
 };
 extern cOffset offset;
 
-//Hook.cpp dosyası sezarda buraya yazıyorum ayrı dosya açmıyorum 
+//Hook.cpp dosyasÃ½ sezarda buraya yazÃ½yorum ayrÃ½ dosya aÃ§mÃ½yorum 
 
 
