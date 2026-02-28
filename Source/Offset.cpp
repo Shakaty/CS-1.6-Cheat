@@ -219,7 +219,7 @@ PClientUserMsg cOffset::FindUserMsgBase(void)
 
 	return PClientUserMsg(**(PDWORD*)UserMsgBase);
 }
-////////////////////////////// my hack offsets
+
 
 PVOID cOffset::FindPlayerMove(void)
 {
@@ -422,4 +422,5 @@ bool cOffset::RestorePageProtection(DWORD addr, DWORD size) //eski korumayý ger
 	return ret;
 }
 ////////////////////////////
+
 
