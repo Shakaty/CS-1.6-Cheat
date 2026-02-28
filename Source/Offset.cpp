@@ -93,10 +93,10 @@ void cOffset::GameInfo(void)
 	if (FarProc(Address, HwBase, HwEnd))
 		Error("Couldn't find GameInfo #3 pointer.");
 
-	__asm // ну куда в c++ без asm ? D:
+	__asm // Г­Гі ГЄГіГ¤Г  Гў c++ ГЎГҐГ§ asm ? D:
 	{
-		call Address // а теперь вызываем функцию котороя возвращяет build
-		mov BuildInfo.Build, eax // ну и return себе пихаем
+		call Address // Г  ГІГҐГЇГҐГ°Гј ГўГ»Г§Г»ГўГ ГҐГ¬ ГґГіГ­ГЄГ¶ГЁГѕ ГЄГ®ГІГ®Г°Г®Гї ГўГ®Г§ГўГ°Г Г№ГїГҐГІ build
+		mov BuildInfo.Build, eax // Г­Гі ГЁ return Г±ГҐГЎГҐ ГЇГЁГµГ ГҐГ¬
 	}
 }
 
@@ -160,13 +160,13 @@ DWORD cOffset::FindGameConsole()
 }
 
 
-// ben ekledim ADJUST DENEN SEVDЭGЭMЭN FONKSЭYONU ЭЗЭN!!
+// 
 void* cOffset::SpeedHackPtr(void)
 {
 	DWORD Old = NULL;
 	PCHAR String = "Texture load: %6.1fms";
 	DWORD Address = (DWORD)FindMemoryClone(HwBase, HwBase + HwSize, String, strlen(String));
-	void* SpeedPtr = (void*)*(DWORD*)(FindReferencee(HwBase, HwBase + HwSize, Address) - 7); //findreferencee yaptэm 
+	void* SpeedPtr = (void*)*(DWORD*)(FindReferencee(HwBase, HwBase + HwSize, Address) - 7); //findreferencee yaptГЅm 
 	if (FarProc((DWORD)SpeedPtr, HwBase, HwEnd))
 		Error("Couldn't find SpeedPtr pointer.");
 	else
@@ -410,15 +410,16 @@ DWORD cOffset::FindPatternbenimki(PCHAR pattern, DWORD start, DWORD end, DWORD o
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-bool cOffset::EnablePageWrite(DWORD addr, DWORD size) //korumayэ deрiюtirme
+bool cOffset::EnablePageWrite(DWORD addr, DWORD size) //korumayГЅ deГ°iГѕtirme
 {
 	return VirtualProtect((void*)addr, size, PAGE_EXECUTE_READWRITE, &dwOldPageProtection) != 0;
 }
 
-bool cOffset::RestorePageProtection(DWORD addr, DWORD size) //eski korumayэ geri verme
+bool cOffset::RestorePageProtection(DWORD addr, DWORD size) //eski korumayГЅ geri verme
 {
 	bool ret = VirtualProtect((void*)addr, size, dwOldPageProtection, &dwOldPageProtection) != 0;
 	FlushInstructionCache(GetCurrentProcess(), (void*)addr, size);
 	return ret;
 }
 ////////////////////////////
+
