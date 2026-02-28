@@ -110,7 +110,7 @@ void FuncInitialize()
 		if (!g_pConsole->IsConsoleVisible())
 			g_pConsole->Activate();
 
-		g_pEngine->pfnClientCmd("exec mych.cfg"); //konsola komut yaziyor exec blabla.cfg yazarsınfln
+		g_pEngine->pfnClientCmd("exec mych.cfg"); 
 		g_Engine.pfnAddCommand("arda", arda); // bazı veriler
 		HookClientFunctions();
 		cfunc.Init();
@@ -272,3 +272,4 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
 
 	return FALSE;
 }
+
