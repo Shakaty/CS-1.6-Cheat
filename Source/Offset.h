@@ -89,6 +89,6 @@ public:
 };
 extern cOffset offset;
 
-//Hook.cpp dosyasý sezarda buraya yazýyorum ayrý dosya açmýyorum 
+
 
 
